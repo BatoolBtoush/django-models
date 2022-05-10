@@ -5,6 +5,23 @@
 
 {% block content %}
     <h1>Welcome to the Home page!</h1>
+    <p>
+        You can navigate to the other pages on this site if you go to the navbar above.
+        <br>
+        <br>
+        And If you want to get more details about a specific snack, make sure to use the id number in the url, 
+        which can be found in the <a href="{% url 'snack_list' %}">Snack List</a>, for example:
+        <br>
+        <code>
+            http://127.0.0.1:8000/snack-detail/"id"
+        </code>
+
+        <br>
+        or just press directly on the snack name in <a href="{% url 'snack_list' %}">Snack List</a>, and you would get the same result.
+        
+
+    </p>
+
 
 {% endblock %}
 
