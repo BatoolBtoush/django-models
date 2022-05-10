@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+{% block page_title %} Snack Details{% endblock %}
+
+    
+{% block content %}
+    <h1>Snack Details</h1>
+
+    <h3>Snack Details for {{snack.name}} are below:</h3>
+    <p> - <b>Purchaser</b>: {{snack.purchaser}} <br> 
+        - <b>Description</b>: {{snack.description}} <br>
+        - <b>Calories</b>:{{snack.calories}}  <br> 
+        - <b>Sodium</b>: {{snack.sodium}} <br> 
+        - <b>Fat</b>: {{snack.fat}} <br>
+        - <b>Carbs</b>: {{snack.carbs}} <br>
+        - <b>Protein</b>: {{snack.protein}} <br>    
+    </p>
+{% endblock %}
+
