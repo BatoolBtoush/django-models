@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+{% block page_title %} Snack Details{% endblock %}
+
+    
+{% block content %}
+    <h1>Snack Details for {{snack.name}} </h1>
+    <p> - Calories {{snack.calories}}  <br> 
+        - Sodium: {{snack.sodium}} <br> 
+        - Fat: {{snack.fat}} <br>
+        - Carbs: {{snack.carbs}} <br>
+        - Protein: {{snack.protein}} <br>    
+    </p>
+{% endblock %}
+
